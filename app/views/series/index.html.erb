@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="title d-flex justify-content-center">
+    Serials Data 😎 
+    <% if params[:search].present? %>
+    	<span> Showing results for actor: <%= params[:search] %></span>
+    <% end %>
+  </div>
+  <form>
+	  <div class="form-group has-search">
+	    <span class="fa fa-search form-control-feedback"></span>
+	    <input type="text" name="search" class="form-control search-actor" placeholder="Search Serial by actor" value="<%= params[:search] %>">
+	  </div>
+	  <button type="submit" class="btn btn-primary"> Search</button>
+  </form>
+  
+
+  <div class="d-flex flex-column flex-md-row">
+  	<% @series.each do |serial| %>
+	    <%= render partial: 'serial', locals: {serial: serial} %>
+    <% end %>
+ </div>
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serial: one
+  user: MyString
+  stars: MyString
+  review: MyText
+
+two:
+  serial: two
+  user: MyString
+  stars: MyString
+  review: MyText

@@ -1,0 +1,17 @@
+<div class="col-sm">
+  <div class="card custom-card" style="padding: 20px">
+    
+    <div class="card-body">
+      <h3 class="card-title"><%=serial.tv_serial.name%></h3>
+      <h5 class="card-title"><%=serial.genre%></h5>
+      <h5 class="card-title">Seasons: <%=serial.number_of_seasons%></h5>
+      <h5 class="card-title">Release Date: <%=serial.date_of_first_release.strftime("%e %b %Y")%></h5>
+      <h5 class="card-title">Director: <%=serial.director%></h5>
+      <h5 class="card-title">Actor: <%=serial.actor%></h5>
+      <h5 class="card-title">Shoot location: <%=serial.shoot_location%></h5>
+
+      <h5 class="card-title">Country: <%=serial.country%></h5>
+      <h4 class="card-title">Rating: <%=serial.tv_serial.reviews.pluck(:stars).reduce(:+).to_f/serial.tv_serial.reviews.count.to_f %></h4>
+    </div>
+  </div>
+</div>

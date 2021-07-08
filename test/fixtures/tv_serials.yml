@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  genre: MyString
+  number_of_seasons: 1
+  date_of_first_release: 2021-07-08 15:24:04
+  director: MyString
+  actor: MyString
+  shoot: MyString
+  location: MyString
+  country: MyString
+
+two:
+  name: MyString
+  genre: MyString
+  number_of_seasons: 1
+  date_of_first_release: 2021-07-08 15:24:04
+  director: MyString
+  actor: MyString
+  shoot: MyString
+  location: MyString
+  country: MyString
